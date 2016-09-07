@@ -1,0 +1,140 @@
+<% include partials/header.ejs %>
+<script type = "text/javascript">
+    $(function() {
+        $("#TypedText").typed({
+            strings: ["I'm a Developer...", "I'm a Student...", "I'm a Software Engineer...", "I'm a Web Developer..."],
+            typeSpeed: 1,
+            loop: true,
+            backDelay: 1000,
+            startDelay: 750
+        });
+    });
+    
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+    
+</script>
+<section class = "area" id = "Home">
+<div id = "CommandPrompt">
+    <div class = "textWraper">
+            <h1>Hey I'm Anthony</h1>
+            <p id = "TypedText"></p>
+    </div>
+</div>
+</section>
+
+<section class = "area" id = "Skills">
+    <h1 id = "SkillsHeadHeader">Skills:</h1>
+    <br /> </br>
+    <div class = "textWraper">
+        <h1 id = "SkillHeader">Languages:</h1>
+            <div class = "textWraper">
+                <div class = "row">
+                    <div class = "col-xs-4  col-sm-3">
+                        <img class = "lang" src = "http://screenshots.en.sftcdn.net/en/scrn/9000/9160/java-runtime-environment-11-535x535.png"/>
+                    </div>
+                    <div class = "col-xs-4  col-sm-3">
+                        <img class = "lang" src = "https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png"/>
+                    </div>
+                    <div class = "col-xs-4  col-sm-3">
+                        <img class = "lang" src = "http://jaspreetchahal.org/images/css3.svg"/>
+                    </div> 
+                    <div class = "col-xs-4  col-sm-3">
+                        <img class = "lang" src = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png"/>
+                    </div>
+                </div>
+            </div>
+        <h1 id = "SkillHeader2">Technologies:</h1>
+            <div id = "low" class = "textWraper">
+                <div class = "row">
+                    <div class = "col-xs-4  col-sm-3">
+                        <img class = "lang" src = "data:image/png;base64,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"/>
+                    </div>
+                    <div class = "col-xs-4  col-sm-3">
+                        <img class = "lang" src = "https://assets.toptal.io/uploads/blog/category/logo/25/express_js.png"/>
+                    </div>
+                    <div class = "col-xs-4  col-sm-3">
+                        <img class = "lang" src = "https://www.seeklogo.net/wp-content/uploads/2015/10/mongodb-logo-vector-download.jpg"/>
+                    </div>
+                    <div class = "col-xs-4 col-sm-3">
+                        <img class = "lang" src = "https://upload.wikimedia.org/wikipedia/en/thumb/6/62/MySQL.svg/640px-MySQL.svg.png"/>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
+
+<section class = "area" id = "Projects">
+<div class = "textWraper">
+    <h1 id = "ProjectsHeader">Projects</h1>
+    <div class = "row">
+        <div class = "col-xs-12">
+            <div class = "project">
+            <h1 class = "ProjecTitle">Policy Talk</h1><ul class = "ProjectTags"><li class = "btn btn-danger">Node JS</li><li class = "btn btn-danger">Express</li><li class = "btn btn-danger">Debates</li><li class = "btn btn-danger">Network</li></ul>
+            <div class = "textWraper">
+                <div id = "ProjectP">
+                    <p>Policy Talk is an upcoming social media network that I am personally developing with a unique twist! It will be completely focused around debates and current world events. I am currently developing this project with node js, express, and mongodb; and I anticipate it to be completed around december this year!</p>
+                    <div class = "progress">
+                        <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="25"
+                          aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                            25% COMPLETE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class = "col-xs-12">
+        <div class = "project">
+            <h1 class = "ProjecTitle">EMAIL API</h1><ul class = "ProjectTags"><li class = "btn btn-danger">Java</li><li class = "btn btn-danger">Emails</li><li class = "btn btn-danger">Custom Emails</li><li class = "btn btn-danger">GMAIL</li></ul>
+            <div class = "textWraper">
+                <div id = "ProjectP">
+                    <p>The EmailAPI project, is a java project that I developed where you are allowed to send custom emails through the google smtp system! This project supports logging into gmail and send custom html/css emails to anyone! It requires java 8 and is almost completed - the project files and source code can be found on my github!</p>
+                    <div class = "progress">
+                        <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="95"
+                          aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                            95% COMPLETE
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+</section>
+
+<section class = "area" id = "Contact">
+    <h1 id = "ContactHead">Contact ME</h1>
+    <div style = "width: 30%; margin: 15px auto;">
+    <form method = "POST" action = "/contact" class = "form-horizontal" id = "contactFrom">
+                <div class = "form-group">
+                    <input class = "form-control" type = "email" name = "email" placeholder = "Email">
+                </div>
+                <div class = "form-group">
+                    <input type = "tex" class = "form-control" name = "message" placeholder = "Message"></textarea>
+                </div>
+                <div class = "form-group invis">
+                    <input class = "form-control invis" type = "text" name = "spam" placeholder = "Spam">
+                </div>
+                <div class = "form-group">
+                    <input id = "submit" type = "submit">
+                </div>
+        </form>
+    </div>
+</section>
+
+<% include partials/footer.ejs %>

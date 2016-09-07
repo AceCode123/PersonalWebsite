@@ -1,0 +1,65 @@
+#footerContainer {
+    height: 100px;
+    display: border-box;
+}
+
+.wraper {
+    text-align: center;
+    padding: 4%;
+    background: #57F274;
+}
+
+box {
+    height: 50px;
+    margin-top: -50px;
+    box-sizing: border-box;
+    display: block;
+}
+
+html body {
+    line-height: 1.25;
+    font-size: 8px;
+    font-family: 'Baloo Paaji', cursive;
+    text-align: center;
+    overflow-y: scroll;
+}
+
+#nav {
+ height: 30%;
+ max-height: 300px;
+ font-size: 2em; 
+}
+
+.navbar-default .navbar-brand {
+    color: #337ab7;
+}
+
+nav.navbar {
+    background-color: #ccc;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+nav.navbar.shrink {
+    max-height: 35px;
+    height: 15%;
+}
+
+ul li {
+    float: center;
+}
+
+body {
+  overflow: hidden;
+}
+
+#name {
+    font-size: 2.5em;
+    float: left;
+}
+
+.wraper ul li {
+    font-size: 2.5em;
+    margin: 5px;
+    text-decoration: none;
+}
