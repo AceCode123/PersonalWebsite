@@ -44,7 +44,7 @@ app.post("/contact", function(req, res) {
     smtpTransport.sendMail(mailOptions, function(error, response){
      if(error){
             console.log(error);
-        res.redirect("/")
+        res.send(error);
      }else{
             console.log("Message sent: " + response.message);
             res.redirect("/");
