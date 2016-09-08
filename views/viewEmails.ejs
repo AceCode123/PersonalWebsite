@@ -1,0 +1,17 @@
+<% if(valid) { %>
+
+<% emails.forEach(function(e) { %>
+    
+    <div style = "border: 5px solid black">
+        <h1>SENDER: <%= e.sender %></h1>
+        <p><%= e.message %></p>
+        
+    </div>
+    
+<% }); %>
+
+<% } else { %>
+
+<h1 style = "text-transform: uppercase, color: red">Invalid KEY</h1>
+
+<% } %>
