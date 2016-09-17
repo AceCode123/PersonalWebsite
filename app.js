@@ -12,7 +12,7 @@ function check(spamMessage) {
 }
 
 var prefix = "Anthony's Website >> ";
-var emailKey = "*6ZK:(,r{6F62~*xC}hk";
+var emailKey = "SuperSecretKey";
 
 var to = "anthonylekan25@gmail.com";
 var from = "BigBear3555@gmail.com";
