@@ -2,7 +2,7 @@ var express = require("express");
 var app = express();
 var bodyparser = require("body-parser");
 var nodemailer = require("nodemailer");
-var saves = [{sender: "test@gmail.com", message: "TestMessage"}, {sender: "LivyJade2003@gmail.com", message: "Wow Anthony, this is great!"}];
+var saves = [{sender: "test@gmail.com", message: "TestMessage"}];
 
 function check(spamMessage) {
    if(spamMessage != "" || spamMessage != undefined) {
